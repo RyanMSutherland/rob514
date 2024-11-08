@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rob514_examples</name>
+  <version>0.1.0</version>
+  <description>Example code for ROB 541</description>
+
+  <maintainer email="bill.smart@oregonstate.edu">Bill Smart</maintainer>
+  <license>BSD 3-Clause</license>
+
+  <author email="bill.smart@oregonstate.edu">Bill Smart</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+
+  <export>
+  </export>
+</package>
