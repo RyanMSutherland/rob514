@@ -1,0 +1,27 @@
+<!--
+	Launch file for drive control
+
+	Ryan Sutherland
+
+	This launch file will control the robot defined in stage_osu
+-->
+
+
+<launch>
+
+	<!-- Start a publisher node, remapping the topic name from "counter" to "number". -->
+	<node pkg="rob514_a" name="drive_control" type="driver.py"/>
+
+    <node pkg="rob514_a" name="stop_control" type="distance.py"/>
+
+	<node pkg="rob514_a" name="rotation_control" type="rotation.py"/>
+
+	<!-- Start the doubler node, running with it's default settings. -->
+	<!-- <node pkg="rob599_basic" name="doubler" type="doubler.py" />
+
+	 Start the subscriber node, remapping the topic name from "counter" to "doubled".
+	<node pkg="rob599_basic" name="subscriber" type="subscriber.py">
+		<remap from="counter" to="doubled" />
+	</node> -->
+
+</launch>
